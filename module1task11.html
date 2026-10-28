@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transition Example</title>
   <style>
-  p { color: red;
-  }
-    .highlight {
-      background-color: #00FF00; /*Heksadesimaaliväri*/
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #8ca0ff;
+      transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
     }
-
-    </style>
-<title>Sivun otsikko</title>
+    .box:hover {
+      background-color: #ff8c8c;
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-<h1>Täällä Outi Onnellinen - eka www-sivu</h1>
-<p>Jotakin kivaa tekstiä</p>
+  <div class="box"></div>
 </body>
 </html>
