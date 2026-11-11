@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Animation Example</title>
+  <title>CSS Transition Example</title>
   <style>
     .box {
       width: 100px;
       height: 100px;
-      background-color: red;
-      animation: colorChange 4s ease-in-out 1s infinite alternate;
+      background-color: #8ca0ff;
+      transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
     }
-    @keyframes colorChange {
-      from { background-color: red; }
-      to { background-color: yellow; }
+    .box:hover {
+      background-color: #ff8c8c;
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
   <div class="box"></div>
 </body>
+</html>
 </html>
