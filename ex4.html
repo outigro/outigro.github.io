@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Filters and Advanced Selectors Example</title>
+  <style>
+    .image {
+      width: 200px;
+      height: 200px;
+      background-image: url('https://via.placeholder.com/200');
+      filter: grayscale(100%);
+    }
+    a[href^="https"] {
+      color: green;
+    }
+    li:nth-child(2) {
+      background-color: yellow;
+    }
+    p:not(.highlight) {
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="image"></div>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <p class="highlight">This is a highlighted paragraph.</p>
+  <p>This is a normal paragraph.</p>
+  <a href="https://example.com">Secure Link</a>
+  <a href="http://example.com">Non-Secure Link</a>
+</body>
+</html>
