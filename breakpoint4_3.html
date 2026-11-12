@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 100%;
+      padding: 20px;
+      background-color: lightgray;
+    }
+    .box {
+      width: 100%;
+      padding: 20px;
+      background-color: white;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 480px) {
+      .box {
+        background-color: lightblue;
+      }
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      .box {
+        background-color: lightgreen;
+      }
+    }
+    @media (min-width: 769px) {
+      .box {
+        background-color: lightcoral;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">div>
+  </div>
+</body>
+</html>
