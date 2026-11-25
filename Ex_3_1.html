@@ -3,21 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Animation Example</title>
+  <title>Responsive Layout Example</title>
   <style>
-    .box {
-      width: 100px;
-      height: 100px;
-      background-color: red;
-      animation: colorChange 4s ease-in-out 1s infinite alternate;
+    body {
+      font-family: Arial, sans-serif;
     }
-    @keyframes colorChange {
-      from { background-color: red; }
-      to { background-color: yellow; }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .item {
+      flex: 1 1 200px;
+      background-color: #8ca0ff;
+      padding: 20px;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box"></div>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
 </body>
 </html>
